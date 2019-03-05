@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12386, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Keys:
+  - __PanelContainer__rootVisualContainer__f41e517840e18a548bc92ed91b9ed1fa__MaterialGraphView__UnityEditor.Experimental.UIElements.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__f41e517840e18a548bc92ed91b9ed1fa__MaterialGraphView__UnityEditor.Experimental.UIElements.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__ef3a438ce90d46c448e1c417f556f7e0__MaterialGraphView__UnityEditor.Experimental.UIElements.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__ef3a438ce90d46c448e1c417f556f7e0__MaterialGraphView__UnityEditor.Experimental.UIElements.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__c087b8c9bbdcb2046af4f19aeb3cafab__MaterialGraphView__UnityEditor.Experimental.UIElements.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__c087b8c9bbdcb2046af4f19aeb3cafab__MaterialGraphView__UnityEditor.Experimental.UIElements.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__62d8e33a6001e6343acc8cb0b52be3b2__MaterialGraphView__UnityEditor.Experimental.UIElements.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__62d8e33a6001e6343acc8cb0b52be3b2__MaterialGraphView__UnityEditor.Experimental.UIElements.GraphView.GraphView+PersistedSelection
+  m_Values:
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{"position":{"x":784.9677734375,"y":364.93084716796877,"z":0.0},"scale":{"x":0.49717673659324648,"y":0.49717673659324648,"z":1.0}}'
+  - '{"m_Version":133,"m_SelectedElementsArray":["2a1c4dab-c6ff-4e61-824c-38ca5f678556","79eb22b4-c38d-4b1a-8981-3393b9fa2c43","ccf8a6dd-3764-43b2-aa64-cf35f3ac2392","2dd03e01-baef-4cbb-9a2e-62af559547d5","ff774fd4-0b90-45c1-a719-356c5b816504","250eaa7e-9624-440c-b88f-d0a57bdbcfd0","441d053e-6802-4a5c-a2aa-f8c77c7942f1","6f3fe3bc-b893-4855-bef3-9d00a29ed173","f1232bd9-5052-4ac5-a452-fe0db0b5df33"]}'
