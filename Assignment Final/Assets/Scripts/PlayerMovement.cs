@@ -12,8 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight = 250;
     private Rigidbody rb;
 
-    private int count;
+    public int count;
     public Text countText;
+
 
     private void Start()
     {
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
             other.gameObject.SetActive(false);
             count += 1;
             SetCountText();
-            Instantiate(particle, other.gameObject.transform.position, Quaternion.identity);
+            Instantiate(particle, other.gameObject.transform.position, Quaternion.Euler(-90,0,0));
         }
     }
 
