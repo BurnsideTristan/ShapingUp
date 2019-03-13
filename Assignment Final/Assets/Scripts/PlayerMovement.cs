@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
 
-	public GameObject particle;
+    public GameObject particle;
+    public string NextLevel;
+    public int NumberOfCollectables;
 
     public float speed;
     public float jumpHeight = 250;
@@ -14,6 +17,14 @@ public class PlayerMovement : MonoBehaviour
 
     public int count;
     public Text countText;
+
+    public int getCount() { return count; }
+    public void setCount(int newCount) { count = newCount; }
+
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+    }
 
 
     private void Start()
@@ -28,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         rb.AddForce(movement * speed);
 
@@ -45,13 +56,14 @@ public class PlayerMovement : MonoBehaviour
             other.gameObject.SetActive(false);
             count += 1;
             SetCountText();
-            Instantiate(particle, other.gameObject.transform.position, Quaternion.Euler(-90,0,0));
+            Instantiate(particle, other.gameObject.transform.position, Quaternion.Euler(-90, 0, 0));
+
+            if(count == NumberOfCollectables)
+            {
+               SceneManager.LoadScene(NextLevel);
+               count = 0;
+            }
+            
         }
     }
-
-    void SetCountText()
-    {
-        countText.text = "Count: " + count.ToString();
-    }
-
 }
