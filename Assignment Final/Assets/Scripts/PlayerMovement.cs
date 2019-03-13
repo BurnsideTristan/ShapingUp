@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+	public GameObject particle;
+
     public float speed;
     public float jumpHeight = 250;
     private Rigidbody rb;
@@ -41,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
             other.gameObject.SetActive(false);
             count += 1;
             SetCountText();
+            Instantiate(particle, other.gameObject.transform.position, Quaternion.identity);
         }
     }
 
